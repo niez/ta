@@ -2,13 +2,15 @@ var https = require("https");
 var fs = require("fs");
 
 var options = {
+	protocol: "https:",
 	hostname: "en.wikipedia.org",
 	port: 443,
 	path: "/wiki/George_Washington",
-	method: "GET"
+	method: "GET",
+	agent: new https.Agent({ keepAlive: false }),
 };
 
-var req = https.request(options, function(res) {
+var req = https.request(options, (res) => {
 
 	var responseBody = "";
 
@@ -18,16 +20,16 @@ var req = https.request(options, function(res) {
 
 	res.setEncoding("UTF-8");
 
-	res.once("data", function(chunk) {
+	res.once("data", (chunk) => {
 		console.log(chunk);
 	});
 
-	res.on("data", function(chunk) {
-		console.log(`--chunk-- ${chunk.length}`);
+	res.on("data", (chunk) => {
+		console.log(`--Chunk-- ${chunk.length}`);
 		responseBody += chunk;
 	});
 
-	res.on("end", function() {
+	res.on("end", () => {
 		fs.writeFile("george-washington.html", responseBody, function(err) {
 			if (err) {
 				throw err;
@@ -38,7 +40,7 @@ var req = https.request(options, function(res) {
 
 });
 
-req.on("error", function(err) {
+req.on("error", (err) => {
 	console.log(`problem with request: ${err.message}`);
 });
 

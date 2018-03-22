@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/niez/ta/issues"
   },
-  "homepage": "https://github.com/niez/ta#readme"
+  "homepage": "https://github.com/niez/ta#readme",
+  "dependencies": {
+    "promise": "^8.0.1"
+  }
 }

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/niez/ta#readme",
   "dependencies": {
+    "kew": "^0.7.0",
     "promise": "^8.0.1"
   }
 }

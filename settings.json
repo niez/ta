@@ -1,0 +1,29 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "files.autoSave": "afterDelay",
+    "editor.tabSize": 2,
+    "view-in-browser.customBrowser": "chrome",
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Atom One Dark",
+    "editor.fontSize": 12.5,
+    "editor.lineHeight": 19,
+    "editor.fontFamily": "Roboto Mono, 'Courier New', monospace, 'Droid Sans Fallback'",
+    "workbench.sideBar.location": "left",
+    "workbench.activityBar.visible": false,
+    "workbench.statusBar.visible": false,
+    "terminal.integrated.fontSize": 12,
+    "explorer.confirmDelete": false,
+    "markdown.preview.lineHeight": 1.8,
+    "markdown.preview.fontFamily": "Merriweather Sans, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-serif",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "comment",
+                "settings": {
+                    "fontStyle": "normal"
+                }
+            }
+        ]
+    }
+}

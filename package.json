@@ -21,5 +21,8 @@
   "dependencies": {
     "kew": "^0.7.0",
     "promise": "^8.0.1"
+  },
+  "devDependencies": {
+    "request": "^2.85.0"
   }
 }

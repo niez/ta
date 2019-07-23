@@ -9,13 +9,13 @@
 const EventEmitter = require('events').EventEmitter;
 const util = require('util');
 
-var Person = function(name) {
+const Person = function(name) {
 	this.name = name;
 };
 
 util.inherits(Person, EventEmitter);
 
-var ben = new Person("Ben");
+const ben = new Person("Ben");
 
 ben.on('speak', (something) => {
 	console.log(`${this.name} say ${something}`);

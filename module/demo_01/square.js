@@ -7,4 +7,5 @@ exports.square = class Square {
 		return this.width ** 2;
 	}
 };
+console.log(module)
 console.log(exports);

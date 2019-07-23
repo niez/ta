@@ -16,3 +16,7 @@ kew.resolve(true)
 .then(function (result) {
     console.log('Path is :' + result);
 })
+
+const getTargetPlatform = () => {
+    return process.platform
+}

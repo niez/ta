@@ -5,6 +5,7 @@ class Clock extends EventEmitter {
 		super();
 		let isOdd = true
 		this.interval = setInterval(() => {
+			// Emit one event
 			this.emit(isOdd ? 'tick': 'tock');
 			isOdd = !isOdd;
 		}, 1000);
@@ -12,6 +13,7 @@ class Clock extends EventEmitter {
 };
 
 const clock = new Clock();
+// Register one event
 clock.on('tick', () => {
 	console.log('tick');
 });

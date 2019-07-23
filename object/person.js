@@ -13,9 +13,23 @@ Person.prototype.greet = function () {
 
 var someone = new Person();
 someone.name = 'Nick';
-someone.greet();
-console.log(someone.hasOwnProperty('name'));
+// someone.greet();
+// console.log(someone.hasOwnProperty('name'));
 
 var somebody = Object.create(someone, {somebody: {configurable: true, enumerable: true, writable: true, value: somebody}})
+module.exports = someone.greet;
+// console.log(somebody)
+console.log(module)
+// console.log(global.process.versions)
 
-console.log(somebody)
+
+var iamObject = {}
+var iamFunction = function(){
+    console.log('i am function')
+}
+
+console.log(iamObject)
+// iamObject()
+iamObject = iamFunction
+console.log(iamObject)
+iamObject()

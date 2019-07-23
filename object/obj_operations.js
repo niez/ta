@@ -1,5 +1,3 @@
-// create new object
-
 var obj_1 = {
 	a: '1',
 	b: '2',
